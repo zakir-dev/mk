@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Table - MK ReadyMix</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/Nunito.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
 </head>
 
 <body id="page-top">
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-addItem" data-bs-backdrop="static">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-addVendor" data-bs-backdrop="static">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Add Item</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    <h4 class="modal-title">Vendor Details</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- Start: 2 Rows 1+1 Columns -->
                     <div class="container">
                         <div class="row">
                             <div class="col">
@@ -28,21 +29,12 @@
                                         <form>
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="username"><strong>Item Name</strong></label><input class="focus-ring focus-ring-primary form-control" type="text" id="username" placeholder="Enter item name" name="name" autofocus="" autocomplete="off" required=""></div>
+                                                    <div class="mb-3"><label class="form-label" for="username"><strong>Vendor Name</strong></label><input class="focus-ring focus-ring-primary form-control" type="text" id="name" placeholder="John Doe..." name="name" autofocus="" autocomplete="off" required=""></div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="row">
-                                                        <div class="col-lg-10">
-                                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Item Unit</strong></label><select class="form-select" name="unit-selector">
-                                                                    <option value="0" selected="">Select Unit</option>
-                                                                    <option value="1">Meter</option>
-                                                                    <option value="2">Kg</option>
-                                                                    <option value="3">CFT</option>
-                                                                    <option value="4">Ton</option>
-                                                                </select></div>
-                                                        </div>
-                                                        <div class="col-lg-2 align-self-center">
-                                                            <div class="float-end" style="margin-top: 16px;"><button class="btn btn-info btn-circle ms-1" type="button" data-bs-target="#modal-addCat" data-bs-toggle="modal"><i class="fa fa-plus text-white" style="font-size: 17px;"></i></button></div>
+                                                        <div class="col">
+                                                            <div class="mb-3"><label class="form-label" for="username"><strong>Phone #</strong></label><input class="focus-ring focus-ring-primary form-control" type="text" id="phone" placeholder="03101234567" name="phone" autofocus="" autocomplete="off" required=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -50,21 +42,13 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="row">
-                                                        <div class="col-lg-10">
-                                                            <div class="mb-3"><label class="form-label" for="first_name"><strong>Scale</strong></label><select class="form-select" name="scal-selector">
-                                                                    <option value="0" selected="">Select Scale</option>
-                                                                    <option value="1">Gravor Sand</option>
-                                                                    <option value="2">12 mm</option>
-                                                                    <option value="3">20 mm</option>
-                                                                </select></div>
-                                                        </div>
-                                                        <div class="col-lg-2 align-self-center">
-                                                            <div class="float-end" style="margin-top: 16px;"><button class="btn btn-info btn-circle ms-1" type="button" data-bs-target="#modal-addCat" data-bs-toggle="modal"><i class="fa fa-plus text-white" style="font-size: 17px;"></i></button></div>
+                                                        <div class="col">
+                                                            <div class="mb-3"><label class="form-label" for="username"><strong>CNIC</strong></label><input class="focus-ring focus-ring-primary form-control" type="text" id="cnic" placeholder="1720123456789" name="cnic" autofocus="" autocomplete="off" required=""></div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="mb-3"><label class="form-label" for="last_name"><strong>Description</strong></label><input class="form-control" type="text" name="descriptionTxt" placeholder="Enter Description"></div>
+                                                    <div class="mb-3"><label class="form-label" for="last_name"><strong>Address</strong></label><input class="form-control" type="text" id="address" name="address" placeholder="DHA Phase 5"></div>
                                                 </div>
                                             </div>
                                         </form>
@@ -72,54 +56,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End: 2 Rows 1+1 Columns -->
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-lg" type="button" data-bs-dismiss="modal">Close</button><button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal">Save</button></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-addCat" data-bs-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Unit</h4><button class="btn-close" type="button" aria-label="Close" data-bs-target="#modal-addItem" data-bs-toggle="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row d-flex justify-content-center align-items-center">
-                        <div class="col">
-                            <div class="card shadow mb-3">
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3"><label class="form-label" for="username"><strong>Unit Name</strong></label><input class="focus-ring focus-ring-primary form-control" type="text" id="username-1" placeholder="Type here..." name="name" autofocus="" autocomplete="off" required=""></div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-3"><label class="form-label" for="last_name"><strong>Description</strong></label><input class="form-control" type="text" name="descriptionTxt" placeholder="Description..."></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal" data-bs-target="#modal-addItem" data-bs-toggle="modal">Close</button><button class="btn btn-primary" type="button" data-bs-target="#modal-addItem" data-bs-toggle="modal">Save</button></div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-dltItem">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header"><i class="fas fa-trash text-danger" style="font-size: 18px;"></i>
-                    <h4 class="modal-title text-danger" style="margin-left: 12px;">Delete Item</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="fs-5 text-dark">Are you sure to delete?</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button">Yes</button><button class="btn btn-primary" type="button" data-bs-dismiss="modal">NO</button></div>
             </div>
         </div>
     </div>
@@ -272,7 +211,7 @@
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="vendortbl">
+                                    <tbody>
                                         <tr class="text-center">
                                             <td>Text</td>
                                             <td>Text</td>
@@ -315,39 +254,8 @@
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script>
-        $(document).ready(function () {
-           $("#vendortbl").empty();
-           
-           loadVendors();
-        });
-
-        function loadVendors() {
-            $.ajax({
-            url: "Models/loadVendors.php",
-            type: "POST",
-            dataType: "json",
-            success: function (e) {
-                $.each(e.VendorList, function (key, value) {
-                    
-                    $("#vendortbl").append(
-                        '<tr class="text-center">'
-                        +"<td>"+value.ID+"</td>"
-                        +"<td>"+value.VendorName+"</td>"
-                        +"<td>"+value.Phone+"</td>"
-                        +"<td>"+value.CNIC+"</td>"
-                        +"<td>"+value.Address+"</td>"
-                        +'<td><button class="btn btn-info btn-sm btn-circle ms-1" id="btn-edit-row" type="button" data-bs-target="#modal-addItem" data-bs-toggle="modal"><i class="fas fa-edit text-white"></i></button><button class="btn btn-danger btn-sm btn-circle ms-1" id="btn-dlt-row" type="button" data-bs-target="#modal-dltItem" data-bs-toggle="modal"><i class="fas fa-trash text-white"></i></button></td>'
-                        +"<tr>"
-                    )
-                })
-            }
-           }); 
-        }
-    </script>
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 <?php
     include("conn.php");
     
-
     $queryy = "SELECT * FROM vendor;";
 
     $Qey_Conn = mysqli_query($conn,$queryy);

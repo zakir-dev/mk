@@ -441,7 +441,7 @@
         })
 
         function LoadItems() {
-            $("#Itemtbl").empty();
+            // $("#Itemtbl").empty();
             $.ajax({
                 url: "Models/loadItems.php",
                 type: "POST",
@@ -463,7 +463,7 @@
                                 var row = "<tr class='text-center'>" +
                                     "<td>" + i++ + "</td>" +
                                     "<td>" + value.ItemName + "</td>" +
-                                    "<td>" + value.Phone + "</td>" +
+                                    "<td>" + value.Unit + "</td>" +
                                     "<td>" + value.Scale + "</td>" +
                                     "<td>" + ((value.Description === '') ? "No desc" : value.Description) + "</td><td>"+
 

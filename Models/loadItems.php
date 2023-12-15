@@ -7,7 +7,19 @@
         exit();
     }
 
-    $queryy = "SELECT i.ID as itemId,s.ID as scaleID,i.ItemName,i.Scale,s.Scale,i.Description FROM item i JOIN scale s on i.ID = s.ID;";
+    $queryy = "SELECT 
+    i.ID AS itemId,
+    s.ID AS scaleID,
+    i.ItemName,
+    i.Scale,
+    s.Scale,
+    i.Description,
+    m.Unit
+FROM
+    item i
+        JOIN
+    scale s ON i.ID = s.ID
+    JOIN measurementunit m on i.Unit = m.ID;";
     $Qey_Conn = mysqli_query($conn, $queryy);
 
     if (!$Qey_Conn) {

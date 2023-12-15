@@ -2,7 +2,7 @@
 $database = "readymix";
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "admin";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password,$database);
